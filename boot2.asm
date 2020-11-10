@@ -23,8 +23,8 @@ Second_Stage:
 	push	word 50 		;y0
 	push	word 50;		;x1
 	push	word 50		;y1
-	push	word 4 		;colour
-	call 	DrawLine	; 0x912e
+	push	word 5 		;colour
+	call 	DrawLine	; 0x9121
 
 	; push	word 10		;x0
 	; push	word 10 		;y0
