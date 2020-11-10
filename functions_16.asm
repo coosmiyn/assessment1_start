@@ -213,14 +213,14 @@ LoopGreaterDX:
 
 %assign a 8
 %assign b 6
-%assign	colour	4
+%assign	colour2	4
 DrawPixel:
 	push	bp
 	mov		bp, sp
-	
+
 	mov		cx, [bp + a]
 	mov		dx, [bp + b]
-	mov		al, [bp + colour]
+	mov		al, [bp + colour2]
 	mov 	ah, 0ch
 	int 	10h	
 
@@ -231,10 +231,10 @@ DrawPixel:
 
 ; Equal:
 
-PutPixel:
-	mov cx, 10  ; column
-	mov dx, 20  ; row
-	mov al, 15  ; white
-	mov ah, 0ch ; put pixel
-	int 10h
-	ret
+; PutPixel:
+; 	mov cx, 10  ; column
+; 	mov dx, 20  ; row
+; 	mov al, 15  ; white
+; 	mov ah, 0ch ; put pixel
+; 	int 10h
+; 	ret
